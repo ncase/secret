@@ -1,0 +1,122 @@
+@font-face{
+	font-family: 'Mathlete';
+	src: url('Mathlete-Skinny.otf');
+}
+
+body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	font-family: Mathlete;
+    
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+
+    /* No support for these yet, use at own risk */
+    -o-user-select: none;
+    user-select: none;
+}
+
+#model{
+	width: 800px;
+	height: 450px;
+	position: absolute;
+	background-color: #CCCCCC;
+	background-image: url(../img/HACK_labels.png); /* HACK */
+}
+#canvas{
+	width: 800px;
+	height: 450px;
+	position: absolute;
+	cursor: pointer;
+}
+#speaker{
+	width: 350px;
+	height: 450px;
+	position: absolute;	
+	background: url(../img/shade.png);
+}
+#speech{
+	width: 250px;
+	height: 100px;
+	position: absolute;	
+	background: url(../img/speech.png);
+
+	left: 90px;
+	top: 175px;
+}
+#samantha{
+	width: 100px;
+	height: 450px;
+	position: absolute;	
+	background: url(../img/samantha.png);
+}
+#secrets{
+	width: 200px;
+	height: 400px;
+	position: absolute;	
+	top:25px;
+	left:125px;
+}
+
+#reset_container{
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+#reset{
+	margin: 0 auto;
+	width: 150px;
+	height: 60px;
+	font-size: 50px;
+	text-align: center;
+	border-radius: 5px;
+	background: #CCCCCC;
+	border-bottom: 5px solid #888;
+	color: #555;
+	line-height: 50px;
+	letter-spacing: 3px;
+	cursor: pointer;
+
+	position: relative;
+	top:0;
+
+	-webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+#reset:hover{
+	top:-5px;
+	background: #DDDDDD;
+	border-bottom: 5px solid #BBB;
+}
+#reset:active{
+	top:2px;
+	background: #BBBBBB;
+	border-bottom: 5px solid #888;
+}
+
+.secret{
+	border-radius: 15px;
+	background: #333;
+	width:100%;
+	height:80px;
+	overflow: hidden;
+	margin-bottom: 25px;
+	position: relative;
+}
+.secret > #secret_bar{
+	width: 0%;
+	height:100%;
+}
+.secret > #secret_info{
+	color: #fff;
+	font-size: 40px;
+	position: absolute;
+	top: 12px;
+	left: 20px;
+}

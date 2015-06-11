@@ -1,0 +1,65 @@
+@font-face{
+	font-family: 'Mathlete';
+	src: url('Mathlete-Bulky.otf');
+}
+
+body {
+	margin: 0;
+	font-size: 20px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	line-height: 1.5em;
+}
+
+hr{
+	border: none;
+	border-top: 3px solid #ddd;
+	width: 900px;
+	position: relative;
+	left:-50px;
+	margin: 80px 0;
+}
+li{
+	margin-bottom: 20px;
+}
+
+#article{
+	width: 800px;
+	margin: 0 auto;
+}
+#article .caption{
+	text-align: center;
+	margin: 30px 0 20px 0;
+	font-size:25px;
+	font-weight: bold;
+}
+#article .caption span{
+	font-weight: 100;
+	font-size: 18px;
+	color: #999;
+}
+
+
+#content iframe{
+	display: block;
+	border: none;
+	margin:40px auto;
+}
+
+#content iframe.highlight{
+	width: 960px;
+	height: 600px;
+	margin: 50px 0;
+}
+#content iframe.splash{
+	width:100%;
+	background: #333;
+	overflow: hidden;
+	margin-top: 0;
+}
+#content iframe.intro{
+	margin-bottom: 50px;
+}
+#content iframe.outro{
+	margin-top: 50px;
+}
